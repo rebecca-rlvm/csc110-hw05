@@ -23,7 +23,20 @@ def get_letter():
 def get_digit():
     """ Add your own Docstring """
     # remove the default return and add your code
-    return 0
+    x = 1
+    while x == 1:
+        d = input("Give an single number character: ")
+        if d.isdigit():
+            pass
+        else:
+            print("Error: your input should be only digits.")
+            continue
+        if d == "1" or d == "2" or d == "3":
+            return d
+            break
+        else:
+            print("Error: a single digit needs to be in [1,3].")
+            continue
 
 
 def check_pattern(letter, digit, lst):
@@ -54,6 +67,7 @@ def main ():
     # -------------------------------------------------
 
     get_letter()
+    get_digit()
 
     # -------------------------------------------------
     # No need to modify anything Below this line
