@@ -1,13 +1,24 @@
 """
-Name: (put your name here)
-Peers: (add any collaborators)
+Name: Rebecca
+Peers: N/A
 References: (anything you checked to solve this)
 """
 
 def get_letter():
     """ Add your own Docstring """
     # remove the default return and add your code
-    return ""
+    x = 1
+    while x == 1:
+        l = input("Give an single uppercase letter: ")
+        if len(l) != 1:
+            print("Error: it needs to be a single character.")
+            continue
+        if l == "A" or l == "B" or l == "C":
+            return l
+            break
+        else:
+            print("Error: You provided the wrong character.")
+            continue
 
 def get_digit():
     """ Add your own Docstring """
@@ -42,7 +53,7 @@ def main ():
     # ADD YOUR CODE UNDER THIS LINE
     # -------------------------------------------------
 
-    # Your code Here
+    get_letter()
 
     # -------------------------------------------------
     # No need to modify anything Below this line
