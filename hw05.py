@@ -42,6 +42,7 @@ def get_digit():
 def check_pattern(letter, digit, lst):
     """ Add your own Docstring """
     # remove the default pass and add your code
+    print("Strings with the pattern:")
     for i in lst:
         q = "test"
         for n in i:
