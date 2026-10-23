@@ -42,7 +42,22 @@ def get_digit():
 def check_pattern(letter, digit, lst):
     """ Add your own Docstring """
     # remove the default pass and add your code
-    pass
+    
+    for i in lst:
+        q = "test"
+        for n in i:
+            if n == letter:
+                q = "success"
+            if n == digit:
+                if q == "success":
+                    print(i)
+                    q = "test"
+                    break
+                else:
+                    continue
+            else:
+                continue
+            
 
 
 #  The function main is INCOMPLETE, you must finish it
@@ -66,9 +81,10 @@ def main ():
     # ADD YOUR CODE UNDER THIS LINE
     # -------------------------------------------------
 
-    get_letter()
-    get_digit()
-
+    let = get_letter()
+    num = get_digit()
+    check_pattern(let,num,st_list)
+    
     # -------------------------------------------------
     # No need to modify anything Below this line
     print("The End")
