@@ -50,7 +50,7 @@ def check_pattern(letter, digit, lst):
                 q = "success"
             if n == digit:
                 if q == "success":
-                    print(i)
+                    print(i, end=" ")
                     q = "test"
                     break
                 else:
@@ -81,9 +81,16 @@ def main ():
     # ADD YOUR CODE UNDER THIS LINE
     # -------------------------------------------------
 
-    let = get_letter()
-    num = get_digit()
-    check_pattern(let,num,st_list)
+    run = 1
+    while run == 1:
+        let = get_letter()
+        num = get_digit()
+        check_pattern(let,num,st_list)
+        inpt = input("\n Try Again? (y/n): ")
+        if inpt == "y" or inpt == "Y":
+            continue
+        if inpt == "n" or inpt == "N":
+            run = 0
     
     # -------------------------------------------------
     # No need to modify anything Below this line
